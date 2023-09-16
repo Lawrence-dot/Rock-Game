@@ -1,0 +1,389 @@
+@font-face {  
+    font-family: boldtext;
+    src: url('../Assets/fonts/Ubuntu-Bold.ttf');
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-image: radial-gradient(rgb(31, 55, 86), rgb(20, 21,57));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.text-white {
+    color: white;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.scorename span {
+    text-align: left;
+    font-weight: 700;
+    font-family: boldtext;
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.mainarea {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 0 20px;
+}
+
+.score {
+    border: 2px solid hsl(217, 16%, 45%);
+    box-shadow: 1px;
+    padding: 10px 15px;
+    margin-top: 50px;
+    border-radius: 8px;
+    align-items: center;
+
+}
+
+.livesdash {
+    margin-left: auto!important;
+}
+
+.scoredash {
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 100%;
+    background-color: white;
+    color: black;
+    min-width: 90px;
+    border-radius: 8px;
+    line-height: 100%;
+    vertical-align: middle;
+    min-height: 80px;
+    padding: 10px 5px;
+}
+
+.scoretext{
+    font-size: medium;
+    color: hsl(229, 64%, 46%);
+}
+
+.scorenum {
+    font-size: 47px;
+    margin-top: 18px;
+    color: hsl(229, 25%, 31%);
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.rock {
+    background: radial-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+
+.paper {
+    background: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+
+.scissors {
+    background: radial-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.game-img {
+    padding: 15px;
+}
+
+.threeview {
+    margin: 20px 0px;
+    margin-top: 50px;
+
+    padding: 10px;
+    justify-content: center;
+}
+
+.threeview>div {
+    height: fit-content;
+}
+
+.choosegame {
+    margin: 15px;
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.choosegame img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.hide {
+    visibility: hidden;
+    height: 0;
+    margin: 0!important;
+}
+
+.twoview {
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.rules {
+    justify-content: center;
+    margin-left: auto;
+    color: white;
+    border: 1px solid white;
+    max-width: 60px;
+    padding: 5px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 165px;
+}
+
+.Rulesmodal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(36, 36, 36. .4);
+}
+
+.info {
+  background-color: whitesmoke;
+  max-width: 400px;
+  border-radius: 8px;
+  margin: auto;
+  min-height: 60px;
+  height: fit-content;
+  padding: 10px;
+
+}
+
+.text-green {
+    color: green !important;
+}
+
+.text-red {
+    color: red !important;
+}
+
+.text-yellow {
+    color: rgb(245, 245, 24)!important;
+}
+
+.text-white {
+    color: white;
+}
+
+.next {
+  max-width: 40px;
+  margin-left: auto;
+  border: 1px solid aliceblue;
+  padding: 4px 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 2px;
+  margin-top: 100px;
+}
+
+.twoview span {
+    color: white;
+    text-align: center;
+}
+
+.gameli {
+    margin: 25px auto;
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid hsl(217, 16%, 45%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: 220px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gameli:hover {
+    background:  hsl(217, 16%, 45%);
+    box-shadow: 2px;
+    transition: .4s ease-in;
+}
+
+
+.gamemenu {
+    margin-top: 20px;
+}
+
+.homepagemenu {
+    margin: 100px;
+    color: white;
+}
+
+.fade {
+    animation: fade 0.5s ease-out;
+  }
+
+.spin {
+    animation: spin 0.6s ease-in;
+}
+
+.pop {
+    animation: pop 0.6s ease-in;
+}
+
+.highscore {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     margin: 100px auto;
+     font-size: 50px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.high {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.About {
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
+.logo img {
+    max-width: 90px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.scoretexxt {
+    color: hsl(228, 26%, 45%);
+    font-weight: 700;
+}
+
+.threeview>div {
+    display: flex;
+    justify-content: center;
+}
+
+.youlose {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.restart button {
+    background-color: hsl(228, 26%, 45%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.mt-1 {
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+.home-icon {
+    color: white;
+    text-align: left;
+    font-size: 30px;
+}
+
+@keyframes spin {
+    to {
+      opacity: 0;
+      transform: rotate(380deg);
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(0.35);
+      opacity: 0;
+    }
+  }
+
+  @keyframes pop {
+    from {
+        transform: scale(0.35);
+        opacity: 0;
+      }
+
+    to {
+      opacity: 0.5;
+    }
+
+  }
+
+@media (max-width: 404px) {
+    .threeview {
+        padding-left: 0px!important;
+    }
+
+    .scoredash {
+        margin: 5px auto!important;
+        margin-right: 0!important;
+    }
+
+    .choosegame {
+        height: 134px;
+        padding: 5px 12px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .choosegame img {
+        height: 50px;
+        width: 50px;
+        background-color: white;
+        border-radius: 100%;
+        padding: 20px;
+    }
+
+    
+    .choosegame {
+        height: 104px;
+        padding: 5px 2px;
+    }
+}
+
+
+ /* Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+- Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+- Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%) */
