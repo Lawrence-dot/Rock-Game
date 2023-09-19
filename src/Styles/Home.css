@@ -308,9 +308,14 @@ body {
     cursor: pointer;
 }
 
+.gameli span {
+    margin-top: -10px;
+}
+
 .mt-1 {
-    margin-top: 4px;
-    margin-right: 4px;
+    top: 2px;
+    position: relative;
+    margin-right: 2px;
 }
 
 .home-icon {
@@ -348,9 +353,10 @@ body {
 
   }
 
-@media (max-width: 404px) {
+@media (max-width: 420px) {
     .threeview {
         padding-left: 0px!important;
+        margin-top: 10px;
     }
 
     .scoredash {
@@ -362,13 +368,22 @@ body {
         height: 134px;
         padding: 5px 12px;
     }
+
+    .score {
+        margin-top: 2px;  
+
+    }
+
+    .homepagemenu {
+        margin: 40px 0px;
+    }
 }
 
 @media (max-width: 350px) {
 
     .choosegame img {
-        height: 50px;
-        width: 50px;
+        height: 43px;
+        width: 43px;
         background-color: white;
         border-radius: 100%;
         padding: 20px;
@@ -376,7 +391,8 @@ body {
 
     
     .choosegame {
-        height: 104px;
+        height: 100px;
+        width: 100px;
         padding: 5px 2px;
     }
 }
