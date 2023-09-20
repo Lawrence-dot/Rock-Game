@@ -8,13 +8,20 @@ a {
     text-decoration: none;
 }
 
-body {
+.Home {
     background-image: radial-gradient(rgb(31, 55, 86), rgb(20, 21,57));
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    overflow-x: hidden;
     overflow-y: hidden;
 }
+
+
+/* .App {
+    height: 100vh;
+    overflow-x: hidden;
+} */
 
 .text-white {
     color: white;
@@ -48,7 +55,7 @@ body {
 .mainarea {
     max-width: 600px;
     margin: 10px auto;
-    padding: 0 20px;
+    padding: 0 14px;
 }
 
 .score {
@@ -353,29 +360,12 @@ body {
 
   }
 
-@media (max-width: 420px) {
-    .threeview {
-        padding-left: 0px!important;
-        margin-top: 10px;
-    }
-
-    .scoredash {
-        margin: 5px auto!important;
-        margin-right: 0!important;
-    }
-
-    .choosegame {
-        height: 134px;
-        padding: 5px 12px;
-    }
-
-    .score {
-        margin-top: 2px;  
-
-    }
-
-    .homepagemenu {
-        margin: 40px 0px;
+@media (max-width: 767px) {
+    .Home {
+        background-image: radial-gradient(rgb(31, 55, 86), rgb(20, 21,57));
+        /* padding-bottom: 20px; */
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 }
 
@@ -396,6 +386,55 @@ body {
         padding: 5px 2px;
     }
 }
+
+
+@media (max-width: 420px) {
+    .threeview {
+        padding-left: 0px!important;
+        margin-top: 20px;
+    }
+
+    .scoredash {
+        margin: 5px auto!important;
+        margin-right: 0!important;
+        min-height: 68px;
+        min-width: 76px;
+    }
+
+    .threeview .choosegame {
+        max-height: 134px;
+        max-width: 140px;
+        padding: 5px 12px;
+    }
+
+    .threeview .choosegame img {
+        height: 63px;
+        width: 63px;
+        padding: 20px;
+    }
+
+    .twoview .choosegame img {
+        height: 83px;
+        width: 83px;
+    }
+
+
+    .twoview .choosegame {
+        max-height: 174px;
+        max-width: 150px;
+        padding: 5px 12px;
+    }
+
+    .score {
+        margin-top: 2px;  
+
+    }
+
+    .homepagemenu {
+        margin: 40px 0px;
+    }
+}
+
 
 
  /* Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
