@@ -12,12 +12,23 @@ body {
     background-image: radial-gradient(rgb(31, 55, 86), rgb(20, 21,57));
 }
 
+.scoress {
+    display: flex;
+    width: 80%;
+}
+
+
 .Home {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
+    display: flex;
+    overscroll-behavior-x: auto;
+    max-width: 56rem;
+    width: 100%;
+    min-width: 362px;
 }
 
 
@@ -47,7 +58,16 @@ body {
     flex-direction: column;
 }
 
-.scorename span {
+.scorename {
+    width: 20%;
+}
+
+.rpc {
+    display: flex;
+    flex-direction: column;
+}
+
+.scorename div {
     text-align: left;
     font-weight: 700;
     font-family: boldtext;
@@ -56,7 +76,7 @@ body {
 }
 
 .mainarea {
-    max-width: 600px;
+    max-width: 500px;
     margin: 10px auto;
     padding: 0 14px;
 }
@@ -64,8 +84,8 @@ body {
 .score {
     border: 2px solid hsl(217, 16%, 45%);
     box-shadow: 1px;
-    padding: 10px 15px;
-    margin-top: 50px;
+    padding: 15px 15px;
+    margin-top: 28px;
     border-radius: 8px;
     align-items: center;
 
@@ -134,8 +154,8 @@ body {
 
 .choosegame {
     margin: 15px;
-    height: 160px;
-    width: 160px;
+    height: 138px;
+    width: 132px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,8 +163,8 @@ body {
 }
 
 .choosegame img {
-    height: 80px;
-    width: 80px;
+    height: 68px;
+    width: 68px;
     background-color: white;
     border-radius: 100%;
     padding: 20px;
@@ -398,11 +418,41 @@ body {
     }
 
     .scoredash {
-        margin: 5px auto!important;
-        margin-right: 0!important;
-        min-height: 68px;
-        min-width: 76px;
+        margin: 20px auto;
+        min-height: 65px;
+        min-width: 128px;
+
     }
+
+    .scorenum {
+        font-size: 30px;
+    }
+
+    /* .rpc {
+        flex-direction: row;
+    } */
+
+    .rpc>div {
+        width: 33.33%;
+    }
+
+    /* .rpc>div:nth-child(2), .rpc>div:last-child  {
+        margin-left: 10px;
+        text-align: right;
+    } */
+
+    .scoredash:first-child {
+        margin-left: 0!important;
+        margin-right: auto;
+    }
+
+    
+    .scoredash:last-child {
+        margin-left: auto;
+        margin-right: 0!important;
+    }
+
+
 
     .choosegame {
         max-height: 97px;
@@ -415,17 +465,18 @@ body {
         width: 43px;
     }
 
-/* 
-    .twoview .choosegame {
-        max-height: 97px;
-        max-width: 80px;
-        padding: 5px 12px;
-    } */
-
     .score {
         margin-top: 2px;  
-
+        flex-direction: column;
     }
+
+    .scorename {
+        width: 100%;
+    }
+
+    .scoress {
+        width: 100%;
+    } 
 
     .homepagemenu {
         margin: 60px 0px;
